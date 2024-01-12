@@ -8,34 +8,40 @@
 </head>
 <body>
   <main class="container">
-    <div>
-      <h1> Body Mass Index Calculator</h1>
-      <p>Better understand your weight in relation to your height using our 
+    <header class="header">
+      <img />
+      <h1 class="title"> Body Mass Index Calculator</h1>
+      <p class="description">Better understand your weight in relation to your height using our 
         body mass index (BM) calculator. While BMI is not the sole determinant 
         of a healthy weight, it offers a valuable starting point to evaluate 
         your overall health and well-being.
       </p>
-    </div>
-        <form>
-          <p>Enter your details below</p>
-          <input type="radio">
-          <label>Metric</label>
-          <input type="radio">
-          <label>Imperial</label>
-          <label>Height</label>
-          <input type="text">
-          <label>Weight</label>
-          <input type="text">
-          <button>Your BMI is...
+    </header>
+        <form class="form-calculator">
+          <p class="detail">Enter your details below</p>
+          <input type="radio"  class="metric" name="metric" id="metric" value="Metric">
+          <label for="Metric">Metric</label>
+          <input type="radio" class="imperial" name="imperial" id="imperial" value="imperial">
+          <label for="imperial">Imperial</label>
+          <label for="height">Height</label>
+          <input type="text" class="height" name="height" id="height">
+          <label for="weight">Weight</label>
+          <input type="text" class="weight" name="weight" id="weight" value="weight">
+          <div class="btn">Your BMI is...
               <!-- add score -->
-              Your BMI suggests you're <!-- add classification -->. 
-              Your ideal weight is between <!-- add range -->.
-          </button>
+              <p id="score" class="score" ></p>
+              <p class="classification">Your BMI suggests you're</p>
+              <!-- add classification -->. 
+              <p id="result" class="result"></p>
+              <p class="ideal">Your ideal weight is between</p>
+              <p id="range" class="range"></p>
+               <!-- add range -->.
+          </div>
         </form>
         <div>
           <img />
-          <h1>What your BMI result means</h1>
-          <article>
+          <h1 class="reference">What your BMI result means</h1>
+          <article class="definition">
             A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
             healthy weight may lower your chances of experiencing health issues later on, 
             such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
@@ -44,7 +50,7 @@
             five days a week.
           </article>
         </div>
-        <section>
+        <section class="information">
           <img/>
           <p>Healthy eating</p>
           <p>Healthy eating promotes weight control, disease prevention, better digestion, 
@@ -63,7 +69,7 @@
             overall restoration and rejuvenation.
           </p>
         </section>
-        <section>
+        <section class="about">
           <h2>Limitations of BMI</h2>
           <p>
             Although BMI is often a practical indicator of healthy weight, it is not suited for 
